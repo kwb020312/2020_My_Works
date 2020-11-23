@@ -1,4 +1,6 @@
-# 2020_My_Works
+# 나의포트폴리오
+
+---
 
 # 트위터
 
@@ -51,3 +53,93 @@ AWS 를 이용하여 서버를 띄우고 Expo 를 사용하여 웹에서 데이�
 <a href="https://github.com/kwb020312/faceclone">페이스북</a>
 
 NodeJS 서버의 다양한 모듈들을 활용하여 페이스북 클론코딩을 해보았음
+
+---
+
+# JavaScript 배움터
+
+## 전역변수
+
+```javascript
+// 해당 스크립트 처럼 가장 바깥에 선언한 변수는 전역변수가 된다.
+const scope = 'global'
+function scope() {
+  alert(scope)
+}
+scope()
+```
+
+## 현제시간
+
+```javascript
+// Date 생성자를 사용하여 현재시간을 구할 수 있다.
+var today = new Date()
+console.log(today)
+```
+
+## 화살표 함수
+
+```javascript
+// 화살표 함수는 아래와 같이 작성한다
+function test() {
+
+}
+// 위의 함수를
+const test = () => {
+
+}
+```
+
+## Spread 연산자
+
+```javascript
+const a = [1,2,3]
+const b = [...a]
+console.log(b)
+// [1,2,3]
+```
+
+## == 과 ===
+
+```javascript
+const a = 1
+const b = "1"
+a == b
+// true
+a === b
+// false
+// == 는 값만 === 는 타입까지 비교
+```
+
+## 정규식 적용법
+
+```javascript
+const test = '1a2b3c'
+test.match(/[1-9]/g)
+// ["1","2","3"]
+```
+
+## 백틱
+
+```javascrpit
+const test1 = 'hello'
+// test1 = 'hello'
+const test2 = `h
+e
+l
+l
+o
+`
+// test2 = 'hello'
+```
+
+## const , let
+
+```javascript
+const a = '1'
+a = 1
+// Constant error
+let b = '1'
+b = 1
+// success
+```
